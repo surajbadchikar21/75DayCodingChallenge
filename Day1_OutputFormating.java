@@ -1,3 +1,7 @@
+// https://www.hackerrank.com/challenges/java-output-formatting/problem?isFullScreen=true
+/*String formatting resource - 
+https://www.geeksforgeeks.org/formatted-output-in-java/
+ */
 import java.util.Scanner;
 
 public class Day1_OutputFormating {
