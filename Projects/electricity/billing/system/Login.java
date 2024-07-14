@@ -55,7 +55,7 @@ public class Login extends JFrame {
         signupButton.setBounds(400, 215, 100, 20);
         add(signupButton);
 
-        // Use getClass().getResource to load the image
+        
         ImageIcon profileOne = new ImageIcon(getClass().getResource("/icon/profile.png"));
         Image profileTwo = profileOne.getImage().getScaledInstance(250, 250, Image.SCALE_DEFAULT);
         ImageIcon fprofileOne = new ImageIcon(profileTwo);
