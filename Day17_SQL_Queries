@@ -1,0 +1,62 @@
+Suraj Anil Badchikar Course: Java Full Stack Development Branch: Pune (Baner) Timing :- 9 A.M. To 11 A.M
+7.Question 
+1)Write a query to display ename and job for all the employee with their half term salary.
+Query - SELECT ENAME, JOB, SAL / 2 AS HALF_TERM_SALARY
+FROM emp;
+Output – 
+
+2)Write a query to display all the details of the employees along with  an annual bonus of 2000.
+SELECT *, SAL + 2000 AS ANNUAL_BONUS
+FROM emp;
+
+3)Write a query to display ename and salary with a hike of 10%.
+SELECT ENAME, SAL * 1.10 AS SALARY_WITH_HIKE
+FROM emp;
+
+
+
+4)Write a query to display ename and salary with deduction of 25%."	
+SELECT ENAME, SAL * 0.75 AS SALARY_WITH_DEDUCTION
+FROM emp;	
+
+
+8.Question
+i.	Write a query to display name and hire date of the employees if the employees were hired during 1982 .
+SELECT ENAME, HIREDATE FROM emp
+WHERE YEAR(HIREDATE) = 1982;
+Output:- 
+
+ii.	Write a query to display name of the employee who gets salary as well as  commission .
+SELECT ENAME FROM emp
+WHERE SAL IS NOT NULL AND COMM IS NOT NULL;
+Output : - 
+
+iii.	Write a query to display name of the employee of employee has character 'A' as the  second character in the name .
+SELECT ENAME  FROM emp
+WHERE ENAME LIKE '_A%';
+
+9.Question
+i.	Write a query to display avg salary needed to pay all the employees in each department excluding the    employees of deptno 20.
+SELECT DEPTNO, AVG(SAL) AS AVG_SALARY FROM emp WHERE DEPTNO <> 20 GROUP BY DEPTNO;
+ 
+ii.	Write a query to display number of employees having character  'a' in their names in each job .
+SELECT JOB, COUNT(*) AS NUM_EMPLOYEES_WITH_A  FROM emp
+WHERE ENAME LIKE '%a%'
+GROUP BY JOB;
+
+iii.	Write a query to display maximum salaries given to an employee working in each dept
+SELECT DEPTNO, MAX(SAL) AS MAX_SALARY
+FROM emp
+GROUP BY DEPTNO;
+
+iv.	Write a query to display ename and job of all the employees working in the same designation as james.
+SELECT ENAME, JOB
+FROM emp
+WHERE JOB = (SELECT JOB FROM emp WHERE ENAME = 'JAMES');
+
+
+v.	Write a query to display ename and hiredate of the employees who's name end’s   with 's' and hired after james ."	
+SELECT ENAME, HIREDATE
+FROM emp
+WHERE ENAME LIKE '%s' 
+  AND HIREDATE > (SELECT HIREDATE FROM emp WHERE ENAME = 'JAMES');			
