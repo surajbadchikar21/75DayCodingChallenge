@@ -46,4 +46,4 @@ public class SinglyLinkedList {
 size+=1;
         }
     }
-}
+
