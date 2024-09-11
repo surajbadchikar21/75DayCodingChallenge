@@ -1,0 +1,23 @@
+prob 1 :- 
+https://leetcode.com/problems/recyclable-and-low-fat-products/description/?envType=study-plan-v2&envId=top-sql-50
+
+Solution :- 
+select product_id from Products where low_fats ='Y' and recyclable = 'Y';
+
+Prob 2  :- https://leetcode.com/problems/find-customer-referee/?envType=study-plan-v2&envId=top-sql-50
+
+Solution :- 
+
+select name from Customer where referee_id != 2 or  referee_id is null;
+
+prob 3:- https://leetcode.com/problems/big-countries/description/?envType=study-plan-v2&envId=top-sql-50
+
+Solution - select name,population,area from World where area>=3000000 or population >=25000000;
+
+prob 4 - https://leetcode.com/problems/article-views-i/?envType=study-plan-v2&envId=top-sql-50
+
+solution -  select distinct author_id as id  from Views where author_id = viewer_id order by author_id ;
+
+prob 5- https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50
+
+solution - select tweet_id from Tweets where length(content)>15;
