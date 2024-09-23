@@ -1,0 +1,10 @@
+1)
+https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/description/?envType=study-plan-v2&envId=top-sql-50
+
+Solution :-
+
+select unique_id,name from Employees left join EmployeeUNI on Employees.id = EmployeeUNI.id;
+
+Notes  :- In the given problem, you are asked to return the unique_id and name of each employee, and if an employee does not have a corresponding unique_id in the EmployeeUNI table, you need to display null.
+
+The LEFT JOIN is the appropriate join type for this scenario because you want to keep all rows from the Employees table, regardless of whether there is a matching row in the EmployeeUNI table. The LEFT JOIN ensures that all employees will appear in the result, even if they do not have a unique_id. When there is no match, the unique_id will show up as null.
