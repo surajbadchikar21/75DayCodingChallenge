@@ -8,3 +8,14 @@ select unique_id,name from Employees left join EmployeeUNI on Employees.id = Emp
 Notes  :- In the given problem, you are asked to return the unique_id and name of each employee, and if an employee does not have a corresponding unique_id in the EmployeeUNI table, you need to display null.
 
 The LEFT JOIN is the appropriate join type for this scenario because you want to keep all rows from the Employees table, regardless of whether there is a matching row in the EmployeeUNI table. The LEFT JOIN ensures that all employees will appear in the result, even if they do not have a unique_id. When there is no match, the unique_id will show up as null.
+
+2) https://leetcode.com/problems/product-sales-analysis-i/description/?envType=study-plan-v2&envId=top-sql-50
+
+Solution :- # Write your MySQL query statement below
+select product_name,year,price from Sales left join Product on Sales.product_id = Product.product_id;
+
+3) https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/?envType=study-plan-v2&envId=top-sql-50
+
+Solution:- 
+
+select customer_id , count(v.visit_id) as count_no_trans from Visits v left join Transactions t on v.visit_id = t.visit_id where t.transaction_id is null group by v.customer_id ;
