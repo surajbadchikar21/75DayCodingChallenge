@@ -1,8 +1,22 @@
+// import module for Button component 
+// import styles from './Button.module.css'
+
 function Button(){
 
-    return(
-        <button className="">Click Here</button>
+    // inline styles
+    const styles ={
+        
+            backgroundColor: "aquamarine",
+            border: "none",
+            cursor :"pointer",
+          
+    }
 
+    return(
+        // inline styling applied  {} dynamicall upload values 
+        <button style={styles}>Click Here</button>
+        // module code below 
+        // <button className="{styles.button}">Click Here</button>
     );
 }
 

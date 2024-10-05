@@ -1,0 +1,7 @@
+
+/* File name must contain file_name.module.css  else it wont show anything */
+.button{
+    background-color: aquamarine;
+    border: none;
+    cursor :pointer;
+  }

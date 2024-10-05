@@ -2,6 +2,7 @@
 // import Footer from './Footer.jsx'
 // import Food from './Food.jsx'
 import Card from './Card'
+import Button from './Button'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Food/> */} 
 
 <Card/>
+<Button/>
 
       </>
   );
