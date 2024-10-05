@@ -11,8 +11,6 @@ public class day27Main {
         s1.selectionsort(arr);
         s1.printArray(arr);
 
-
-
     }
     
 }
