@@ -19,7 +19,10 @@ function App() {
 <Button/>
 {/* Props code below */}
 <Student name="Suraj" age={30} isStudent={true}/>
-
+      
+<Student name="Tempest" age="30" isStudent={true}/>
+<Student name="Tempest1"/>
+<Student/>
       </>
   );
 
