@@ -4,6 +4,7 @@
 import Card from './Card'
 import Button from './Button'
 import Student from './Student';
+import UserGreeting from './UserGreeting';
 
 function App() {
 
@@ -15,14 +16,17 @@ function App() {
       <Footer/>
       <Food/> */} 
 
-<Card/>
-<Button/>
+{/* <Card/>
+<Button/> */}
 {/* Props code below */}
-<Student name="Suraj" age={30} isStudent={true}/>
+{/* <Student name="Suraj" age={30} isStudent={true}/>
       
 <Student name="Tempest" age="30" isStudent={true}/>
 <Student name="Tempest1"/>
-<Student/>
+<Student/> */}
+
+  <UserGreeting isLoggedIn={true} username="Tempest91" />
+
       </>
   );
 

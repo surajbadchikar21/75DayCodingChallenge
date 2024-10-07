@@ -32,3 +32,13 @@
 student p {
   margin:0;
 }
+
+.welcome-prompt{
+  background-color: rgb(0, 255, 13);
+  font-size: 20px;
+}
+
+.login-prompt{
+  background-color: red;
+  font-size: 30px;
+}
