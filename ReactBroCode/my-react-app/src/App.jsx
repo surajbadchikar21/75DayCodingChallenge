@@ -10,6 +10,7 @@ import MyComponent from './MyComponent';
 
 import Button1 from './Button1';
 import Counter from './Counter';
+import Component2 from './Component2';
 function App() {
 
   return(
@@ -32,8 +33,11 @@ function App() {
   <UserGreeting isLoggedIn={true} username="Tempest91" />
   <List/> */}
 {/* <Button1/> */}
-<MyComponent/>
-<Counter/>
+{/* <MyComponent/>
+<Counter/> */}
+
+<Component2/>
+
       </>
   );
 
