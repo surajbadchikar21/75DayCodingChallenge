@@ -11,6 +11,7 @@ import MyComponent from './MyComponent';
 import Button1 from './Button1';
 import Counter from './Counter';
 import Component2 from './Component2';
+import ColorPicker from './ColorPicker';
 function App() {
 
   return(
@@ -36,7 +37,8 @@ function App() {
 {/* <MyComponent/>
 <Counter/> */}
 
-<Component2/>
+{/* <Component2/> */}
+<ColorPicker/>
 
       </>
   );
