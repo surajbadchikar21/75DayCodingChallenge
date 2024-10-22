@@ -4,7 +4,7 @@
 import Card from './Card'
 import Button from './Button'
 import Student from './Student';
-import UserGreeting from './UserGreeting';
+// import UserGreeting from './UserGreeting';
 import List from './List';
 import MyComponent from './MyComponent';
 
@@ -12,6 +12,7 @@ import Button1 from './Button1';
 import Counter from './Counter';
 import Component2 from './Component2';
 import ColorPicker from './ColorPicker';
+import UpObjInState from './UpObjInState';
 function App() {
 
   return(
@@ -38,8 +39,8 @@ function App() {
 <Counter/> */}
 
 {/* <Component2/> */}
-<ColorPicker/>
-
+{/* <ColorPicker/> */}
+<UpObjInState />
       </>
   );
 
